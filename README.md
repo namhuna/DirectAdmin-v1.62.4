@@ -1,15 +1,21 @@
 # DirectAdmin-1.62.4
+
 DirectAdmin Nulled
+
 #### Install Centos 7:
+
 ```
-yum -y install nano wget perl;wget --no-check-certificate https://raw.githubusercontent.com/puarudz/v4Panel-1.62.4/main/setup.sh;chmod +x setup.sh;sed -i 's/\r//' setup.sh;./setup.sh
+yum -y install nano wget perl;wget --no-check-certificate https://raw.githubusercontent.com/BabaYaba0179/DirectAdmin-v1.62.4/main/setup.sh;chmod +x setup.sh;sed -i 's/\r//' setup.sh;./setup.sh
 ```
+
 #### Auto Active (Only eth0):
+
 ```
-wget --no-check-certificate https://raw.githubusercontent.com/puarudz/v4Panel-1.62.4/main/active.sh;chmod -R 777 active.sh;./active.sh
+wget --no-check-certificate https://raw.githubusercontent.com/BabaYaba0179/DirectAdmin-v1.62.4/main/active.sh;chmod -R 777 active.sh;./active.sh
 ```
 
 #### Manual Active:
+
 ```
 firewall-cmd --zone=public --add-port=2222/tcp --permanent
 firewall-cmd --zone=public --add-port=21/tcp --permanent
@@ -33,11 +39,11 @@ service network restart
 service directadmin start
 ```
 
-
 #### Update Mirror Centos 7:
+
 ```
-wget -O /etc/yum/pluginconf.d/fastestmirror.conf --no-check-certificate https://raw.githubusercontent.com/puarudz/v4Panel-1.62.4/main/fastestmirror.conf
-wget -O /etc/yum.repos.d/CentOS-Base.repo --no-check-certificate https://raw.githubusercontent.com/puarudz/v4Panel-1.62.4/main/CentOS-Base.repo
+wget -O /etc/yum/pluginconf.d/fastestmirror.conf --no-check-certificate https://raw.githubusercontent.com/BabaYaba0179/DirectAdmin-v1.62.4/main/fastestmirror.conf
+wget -O /etc/yum.repos.d/CentOS-Base.repo --no-check-certificate https://raw.githubusercontent.com/BabaYaba0179/DirectAdmin-v1.62.4/main/CentOS-Base.repo
 sudo yum clean all
 sudo yum repolist -v
 ```
