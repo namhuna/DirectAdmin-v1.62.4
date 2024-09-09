@@ -1,6 +1,16 @@
 # DirectAdmin-1.62.4
 
-DirectAdmin Nulled
+DirectAdmin Nulled - HUNA
+___________________________________________________________________________________________
+
+#### Update Mirror Centos 7:
+
+```
+wget -O /etc/yum/pluginconf.d/fastestmirror.conf --no-check-certificate https://raw.githubusercontent.com/namhuna/DirectAdmin-v1.62.4/main/fastestmirror.conf
+wget -O /etc/yum.repos.d/CentOS-Base.repo --no-check-certificate https://raw.githubusercontent.com/namhuna/DirectAdmin-v1.62.4/main/CentOS-Base.repo
+sudo yum clean all
+sudo yum repolist -v
+```
 
 #### Install Centos 7:
 
@@ -43,13 +53,4 @@ echo 'NETMASK=255.0.0.0' >> /etc/sysconfig/network-scripts/ifcfg-eth0:100
 service network restart
 /usr/bin/perl -pi -e 's/^ethernet_dev=.*/ethernet_dev=eth0:100/' /usr/local/directadmin/conf/directadmin.conf
 service directadmin start
-```
-
-#### Update Mirror Centos 7:
-
-```
-wget -O /etc/yum/pluginconf.d/fastestmirror.conf --no-check-certificate https://raw.githubusercontent.com/namhuna/DirectAdmin-v1.62.4/main/fastestmirror.conf
-wget -O /etc/yum.repos.d/CentOS-Base.repo --no-check-certificate https://raw.githubusercontent.com/namhuna/DirectAdmin-v1.62.4/main/CentOS-Base.repo
-sudo yum clean all
-sudo yum repolist -v
 ```
