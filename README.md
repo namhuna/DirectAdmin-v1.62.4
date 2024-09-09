@@ -1,9 +1,9 @@
-# DirectAdmin-1.62.4
+# Cài đặt DirectAdmin-1.62.4
 
-DirectAdmin Nulled - HUNA
+DirectAdmin bản Nulled - HUNA
 ___________________________________________________________________________________________
 
-#### Update Mirror Centos 7:
+#### Cập nhật Mirror Centos 7:
 
 ```
 wget -O /etc/yum/pluginconf.d/fastestmirror.conf --no-check-certificate https://raw.githubusercontent.com/namhuna/DirectAdmin-v1.62.4/main/fastestmirror.conf
@@ -12,25 +12,25 @@ sudo yum clean all
 sudo yum repolist -v
 ```
 
-#### Install Centos 7:
+#### Cài đặt cho Centos 7:
 
 ```
 yum -y install nano wget perl;wget --no-check-certificate https://raw.githubusercontent.com/namhuna/DirectAdmin-v1.62.4/main/setup.sh;chmod +x setup.sh;sed -i 's/\r//' setup.sh;./setup.sh
 ```
 
-#### Install Centos 8:
+#### Cài đặt cho Centos 8 (Lỗi):
 
 ```
 yum -y install nano wget perl;wget --no-check-certificate https://raw.githubusercontent.com/namhuna/DirectAdmin-v1.62.4/main/centos8.sh;chmod +x centos8.sh;sed -i 's/\r//' centos8.sh;./centos8.sh
 ```
 
-#### Auto Active (Only eth0):
+#### Tự động kích hoạt (Chỉ eth0):
 
 ```
 wget --no-check-certificate https://raw.githubusercontent.com/namhuna/DirectAdmin-v1.62.4/main/active.sh;chmod -R 777 active.sh;./active.sh
 ```
 
-#### Manual Active:
+#### Kích hoạt thủ công:
 
 ```
 firewall-cmd --zone=public --add-port=2222/tcp --permanent
