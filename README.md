@@ -1,7 +1,7 @@
 # Cài đặt DirectAdmin-1.62.4
 
-DirectAdmin bản Nulled - HUNA
-___________________________________________________________________________________________
+DirectAdmin Nulled by HUNA. Đây là phiên bản được sao chép lại.
+_________________________________________________________________
 
 #### Cập nhật Mirror Centos 7:
 
