@@ -18,12 +18,6 @@ sudo yum repolist -v
 yum -y install nano wget perl;wget --no-check-certificate https://raw.githubusercontent.com/namhuna/DirectAdmin-v1.62.4/main/setup.sh;chmod +x setup.sh;sed -i 's/\r//' setup.sh;./setup.sh
 ```
 
-#### Cài đặt cho Centos 8 (Lỗi):
-
-```
-yum -y install nano wget perl;wget --no-check-certificate https://raw.githubusercontent.com/namhuna/DirectAdmin-v1.62.4/main/centos8.sh;chmod +x centos8.sh;sed -i 's/\r//' centos8.sh;./centos8.sh
-```
-
 #### Tự động kích hoạt (Chỉ eth0):
 
 ```
